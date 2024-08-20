@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Series</title>
+</head>
+
+<body>
+    <header>
+        <a href="a" class="logo">1Movies</a>
+        <ul class="nav">
+            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li><a href="index.html">Movies</a></li>
+            <li><a href="series.html">Series</a></li>
+            <li><a href="#">Trend</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="content the-boys active">
+            <img src="images/the-boys.png" alt="" class="movie-title" />
+            <h4>
+                <span>2024</span><span><i>18+</i></span><span>1h</span><span>comics</span>
+            </h4>
+            <p>The mentioned sectors are just a few of what the whole industry
+                consists of, the industry is aimed at the physical
+                appearance of a person because physical
+                appearance are the first thing we see when
+                meet a man or a woman,
+                as looking representable is necessary. </p>
+
+            <div class="button">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+            </div>
+        </div>
+        <div class="content the-witcher">
+            <img src="images/the- witcher.png" alt="" class="movie-title" />
+            <h4>
+                <span>2023</span><span><i>12+</i></span><span>45min</span><span>Action</span>
+            </h4>
+            <p>The mentioned sectors are just a few of what the whole industry
+                consists of, the industry is aimed at the physical
+                appearance of a person because physical
+                appearance are the first thing we see when
+                meet a man or a woman,
+                as looking representable is necessary. </p>
+
+            <div class="button">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+            </div>
+        </div>
+
+        <div class="content the-lord-of-the-ring">
+            <img src="images/the-lord-of-the-rings-title.png" alt="Movie Name" class="movie-title">
+            <h4>
+                <span>2023</span>
+                <span><i>12+</i></span>
+                <span>2h 03min</span>
+                <span>War/Action</span>
+            </h4>
+            </h4>
+            <p>The mentioned sectors are just a few of what the whole industry
+                consists of, the industry is aimed at the physical
+                appearance of a person because physical
+                appearance are the first thing we see when
+                meet a man or a woman,
+                as looking representable is necessary. </p>
+
+            <div class="button">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+            </div>
+        </div>
+
+        <div class="content the-rings-of-power">
+            <img src="images/the-rings-of-power.png" alt="Movie Name" class="movie-title">
+            <h4>
+                <span>2023</span>
+                <span><i>18+</i></span>
+                <span>1h 40min</span>
+                <span>Thriller</span>
+            </h4>
+            </h4>
+            <p>The mentioned sectors are just a few of what the whole industry
+                consists of, the industry is aimed at the physical
+                appearance of a person because physical
+                appearance are the first thing we see when
+                meet a man or a woman,
+                as looking representable is necessary. </p>
+
+            <div class="button">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+            </div>
+        </div>
+
+        <div class="content loki">
+            <img src="images/loki.png" alt="Movie Name" class="movie-title">
+            <h4>
+                <span>2023</span>
+                <span><i>18+</i></span>
+                <span>1h 40min</span>
+                <span>Horror</span>
+            </h4>
+            </h4>
+            <p>The mentioned sectors are just a few of what the whole industry
+                consists of, the industry is aimed at the physical
+                appearance of a person because physical
+                appearance are the first thing we see when
+                meet a man or a woman,
+                as looking representable is necessary. </p>
+
+            <div class="button">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+            </div>
+        </div>
+        
+        <div class="carousel-box">
+            <div class="carousel">
+                <div class="carousel-item" onclick="changeBg('bg-the-boys.jpg', 'the-boys');">
+                    <img src="images/movies/the-boys.jpg" alt="">
+                </div>
+                <div class="carousel-item" onclick="changeBg('Bg-the-witcher.jpg', 'the-witcher');">
+                    <img src="images/movies/the-witcher.jpg" alt="">
+                </div>
+                <div class="carousel-item" onclick="changeBg('bg-lord-of-the-rings.jpg', 'the-lord-of-the-ring');">
+                    <img src="images/movies/the-lord-of-the-rings.jpg" alt="">
+                </div>
+                <div class="carousel-item" onclick="changeBg('bg-the-rings-of-power.jpg', 'the-rings-of-power');">
+                    <img src="images/movies/the-rings-of-power.jpg" alt="">
+                </div>
+                <div class="carousel-item" onclick="changeBg('bg-loki.jpg', 'loki');">
+                    <img src="images/movies/loki.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <a href="" class="play" onclick="toggleVideo();"><i class="fa fa-play-circle-o" aria-hidden="true"></i>Watch
+            Trailer</a>
+
+        <ul class="sc1">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-twitter-square"></i></a>
+            </li>
+        </ul>
+        <div class="trailer">
+            <video src="/images/movies/Download.mp4" muted controls="true" autoplay="true"></video>
+            <img class="close" src="images/close.png" alt="" onclick="toggleVideo();">
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/97599b860a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });
+
+
+
+
+        function togglevideo() {
+            const trailer = document.querySelector('.trailer')
+        }
+    </script>
+
+
+</body>
+
+</html>
