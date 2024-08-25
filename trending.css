@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #120e16, #03010f);
+  color: white;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+#movies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.movie {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie:hover {
+  transform: scale(1.05);
+}
+
+.movie h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.movie img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.movie p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.trailer-button {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background 0.3s ease-in-out;
+}
+
+.trailer-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+  z-index: 10;
+}
+
+.logo{
+  font-size: 40px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+
+.nav{
+  display: flex;
+}
+.nav li{
+  list-style: none;
+  margin: 0 10px;
+}
+
+.nav li a{
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav li:hover a{
+  color: var(--primary);
+}
+
+.search{
+  position: relative;
+  width: 300px;
+  height: 40px;
+}
+.search input{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255,0.5);
+  outline: none;
+  border-radius: 4px;
+  padding: 0 10px 0 45px !important;
+  backdrop-filter: blur(10px);
+}
+.search input::placeholder{
+  color: #ffffff;
+}
+
+.search i{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  padding-right: 10px;
+  color: #ffffff;
+  border-right: 1px solid #ffffff;
+}
